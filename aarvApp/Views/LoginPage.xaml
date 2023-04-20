@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             x:Class="aarvApp.Views.LoginPage" BackgroundColor="#7EC8D7">
+    <!-- Nombre: Angel Armando Ramirez Vazquez No.Control:1221100627 -->
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <material:MaterialCard Margin="10" Elevation="10" CornerRadius="5">
+                    <StackLayout>
+                        <Image Source="usuario" HeightRequest="100" WidthRequest="100"/>
+                        <material:MaterialTextField x:Name="TxtUsuario" Placeholder="Ingresa un Usuario" InputType="Default"/>
+                        <material:MaterialTextField x:Name="TxtPassword" Placeholder="Contraseña" InputType="Password"/>
+                        <material:MaterialButton x:Name="BtnIngresar" Text="Ingresar" BackgroundColor="#7EACD7" CornerRadius="7" 
+                                             Clicked="BtnIngresar_Clicked"/>
+                    </StackLayout>
+                </material:MaterialCard>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

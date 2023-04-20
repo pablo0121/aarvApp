@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             x:Class="aarvApp.Views.InicioPage" BackgroundColor="#7EC8D7">
+    <!-- Nombre: Angel Armando Ramirez Vazquez No.Control:1221100627 -->
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <material:MaterialCard Grid.Row="0" Grid.Column="0" CornerRadius="5" Margin="5" IsClickable="True" BackgroundColor="#7EC8D7" 
+                                   BorderColor="#7EC8D7" Elevation="4" Clicked="MaterialCard_Clicked" BindingContext="1">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="datos" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Ver Datos" FontAttributes="Bold" FontSize="Subtitle"/>
+                </StackLayout>
+            </material:MaterialCard>
+            <material:MaterialCard Grid.Row="0" Grid.Column="1" CornerRadius="5" Margin="5" IsClickable="True" Elevation="4" BackgroundColor="#7EC8D7"
+                                   BorderColor="#7EC8D7" Clicked="MaterialCard_Clicked" BindingContext="2">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="dispositivos" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Dispositivos" FontAttributes="Bold" FontSize="Subtitle" />
+                </StackLayout>
+            </material:MaterialCard>
+
+            <material:MaterialCard Grid.Row="1" Grid.Column="0" CornerRadius="5" Margin="5" IsClickable="True" Elevation="4" BackgroundColor="#7EC8D7" 
+                                   BorderColor="#7EC8D7" Clicked="MaterialCard_Clicked" BindingContext="3">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="encendido" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Encender" FontAttributes="Bold" FontSize="Subtitle"/>
+                </StackLayout>
+            </material:MaterialCard>
+
+            <material:MaterialCard Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" IsClickable="True" Elevation="4" BackgroundColor="#7EC8D7"
+                                   BorderColor="#7EC8D7" Clicked="MaterialCard_Clicked" BindingContext="4">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="informacion" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Información" FontAttributes="Bold" FontSize="Subtitle"/>
+                </StackLayout>
+            </material:MaterialCard>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

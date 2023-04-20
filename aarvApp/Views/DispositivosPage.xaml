@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aarvApp.Views.DispositivosPage" BackgroundColor="#7EC8D7">
+    <!-- Nombre: Angel Armando Ramirez Vazquez No.Control:1221100627 -->
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Dispositivos"
+                HorizontalOptions="CenterAndExpand" 
+                FontAttributes="Bold" FontSize="Subtitle"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="aarvApp.Views.VerDatosPage" BackgroundColor="#7EC8D7">
+    <!-- Nombre: Angel Armando Ramirez Vazquez No.Control:1221100627 -->
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ver Datos" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Subtitle" />
+            <Label Text="Temperatura" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" />
+            <microcharts:ChartView x:Name="chartTemperatura" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
